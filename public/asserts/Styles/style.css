@@ -5,6 +5,12 @@
     padding:0;
     /* background-color: black; */
 }
+@media(max-width:550px){
+    .logo img{
+        display: none;
+        align-items: center;
+    }
+}
 .head{
     height: 100vh;
     width: 100%;
@@ -19,7 +25,15 @@
 }
 @media(max-width:800px){
     .head{
-        background: none;
+        background: url(../images/Mob_Header.png);
+        background-position: center;
+        background-position-y: top;
+        background-size: 415px;
+        background-origin: inherit;
+        background-repeat: no-repeat;
+        /* -webkit-background-size: cover; */
+        -moz-background-size: cover;
+        -o-background-size: cover;
     }
 }
 .logoImg{
@@ -33,14 +47,38 @@
 .topHead{
     margin-top: 115px;
     font-weight: 900;
-    color: #005cff;
+    color: grey;
     text-shadow: 3px 4px lightgrey;
 }
+@media(max-width:550px){
+    .topHead{
+        top: 50% !important;
+        left: 50%;
+        margin-top:190px;
+        text-align: center;
+        font-size: 25px;
+        text-shadow: none;
+    }
+}
 .subTitle{
-    color: grey;
-    letter-spacing: .3rem;
+    color: #005cff;
+    /* letter-spacing: .3rem; */
+}
+@media(max-width:550px){
+    .subTitleText{
+        /* font-size: 20px !important; */
+    }
 }
 
+@media(max-width:550px){
+    main button{
+        margin-left: 80px !important;
+    }
+}
+.PageContent h1{
+    font-weight: 700;
+    font-size: 50px;
+}
 /* LEad form css */
 form{
     border-radius: 25px;
@@ -61,6 +99,12 @@ form{
     border: 1px solid #ddd;
     border-radius: 25px;
 }
+@media(max-width:550px){
+    .topLead .form-inline input {
+        width:286px;
+    }
+}
+
 .form-inline input:focus{
     outline: none;
 }
@@ -112,60 +156,62 @@ button{
     margin-top: 175px;
 }
 
+@media(max-width:550px){
+    .PageContent{
+        margin-top: 10px;
+    }
+}
+
 .imagePointer:nth-child(1){
         height: 100vh;
         width: 100%;
-        background-image: url(../images/DesignImg.png);
+        background-image: url(../images/WebDImg.png);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
 }
 @media(max-width:550px){
     .imagePointer:nth-child(1){
-        background-size: 595px;
+        background-size: 405px !important;
+        height: 65vh;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 }
 
 .imagePointer1 {
  height: 100vh;
  width: 100%;
- background-image: url(../images/mobFriendImg.png);
+ background-image: url(../images/DesignImg.png);
  background-position: center;
  background-size: cover;
  background-repeat: no-repeat;
 }
 @media(max-width:550px) {
     .imagePointer1 {
-        background-size: 405px;
+        background-size: 525px !important;
+        height: 65vh;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 }
 .imagePointer2 {
     height: 100vh;
     width: 100%;
-    background-image: url(../images/WebDImg.png);
+    background-image: url(../images/mobFriendImg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 @media(max-width:550px) {
     .imagePointer2 {
-        background-size: 405px;
+        background-size: 415px !important;
+        height: 65vh;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 }
 .imagePointer3 {
-    height: 100vh;
-    width: 100%;
-    background-image: url(../images/clientImg.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-@media(max-width:550px) {
-    .imagePointer3 {
-        background-size: 405px;
-    }
-}
-.imagePointer4 {
     height: 100vh;
     width: 100%;
     background-image: url(../images/estimateimg.png);
@@ -174,8 +220,28 @@ button{
     background-repeat: no-repeat;
 }
 @media(max-width:550px) {
+    .imagePointer3 {
+        height: 65vh;
+        width: 100%;
+        background-size: 440px !important;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+.imagePointer4 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/clientImg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media(max-width:550px) {
     .imagePointer4 {
-        background-size: 405px;
+        background-size: 405px !important;
+        height: 65vh;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 }
 
@@ -185,21 +251,81 @@ button{
 }
 @media(max-width:550px){
     .content{
-        margin-top: 40px;
+        margin-top: 40px !important;
     }
 }
 
 footer{
+    
+    margin-top: 120px;
     height: 100vh;
     width: 100%;
-    background-image: url(../images/footerImg.jpg);
+    background-image: url(../images/Landing.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
+footer .row{
+    margin-top: 200px !important;
+}
+@media(max-width:550px){
+    footer {
+        top: 50%;
+        left: 50%;
+        margin-top:40px !important;
+        height: 100vh;
+        width: 100%;
+        background-image: url(../images/Mob_footer.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        margin-bottom: 60px;
+    }
+    footer input {
+        width: 286px;
+    }
+    @media(max-width:550px){
+        footer input{
+            width: 180px;
+            
+        }
+    }
+}
 
+footer1{
+    
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: .8rem;
+    /* border: 1px solid grey; */
+    background: #fafbfc;
+}
 
+.cont-text TT span{
+    text-align: center !important;
+    
+}
+.cont-text p{
+    font-size: xx-large;
+    text-align: center !important;
+}
+@media(max-width:550px){
+    .cont-text p {
+        font-size: larger;
+        text-align: center !important;
+    }
+}
 
+.bText strong{
+    font-size: 3.4rem;
+}
+@media(max-width:550px){
+    .bText strong {
+        font-size: 1.4rem;
+    }
+}
 /* modal Code */
 /* The Modal (background) */
 #mobModal {
@@ -246,6 +372,50 @@ footer{
         /* Fallback color */
         background-color: rgba(0, 0, 0, 0.4);
         /* Black w/ opacity */
+}
+#webModal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+#priceModal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
 }
 /* Modal Content */
 .modalContent {
@@ -310,6 +480,11 @@ footer{
 
 .modalBody {
     padding: 2px 16px;
+}
+@media(max-width:550px){
+    .modalBody {
+        padding: 2px 2px;
+    }
 }
 
 .modalFooter {
@@ -579,6 +754,12 @@ textarea:focus {
     -o-border-radius: 20px;
     -ms-border-radius: 20px;
 }
+@media(max-width:550px){
+    .modalBody .container {
+        width: 255px !important;
+        max-width: 100%;
+    }
+}
 
 .modalBody .display-flex {
     justify-content: space-between;
@@ -624,6 +805,11 @@ textarea:focus {
 .signup-content {
     padding: 75px 0;
 }
+@media(max-width:550px){
+    .modalBody .signup-content{
+        padding: 10px 0;
+    }
+}
 .modalBody
 .signup-form,
 .signup-image,
@@ -641,8 +827,18 @@ textarea:focus {
     margin-bottom: 33px;
 }
 
+@media(max-width:550px){
+    .modalBody .form-title {
+        padding-top: 15px;
+    }
+}
 .modalBody.signup-image {
     margin-top: 45px;
+}
+@media(max-width:550px){
+    .modalBody img {
+        display: none;
+    }
 }
 .modalBody
 figure {
@@ -992,6 +1188,11 @@ figure {
         padding: 0 30px;
     }
 
+    @media(max-width:550px){
+        
+    }
+
+
    .modalBody .signin-image {
         margin-left: 0px;
         margin-right: 0px;
@@ -1035,6 +1236,11 @@ figure {
 
    .modalBody .form-title {
         text-align: center;
+    }
+}
+@media(max-width:550px){
+    .modalBody .form-title{
+        font-size: 18px;
     }
 }
 

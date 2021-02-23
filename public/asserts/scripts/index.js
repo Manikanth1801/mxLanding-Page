@@ -42,11 +42,39 @@ window.onclick = function(event) {
 }
 
 
+let webModal = document.getElementById("webModal");
+let webBtn = document.getElementById("webBtn");
+let ClsBtn = document.getElementById("close2");
 
+webBtn.onclick = function(){
+    webModal.style.display = "block";
+}
+ClsBtn.onclick = function(){
+    webModal.style.display = "none";
+}
 
+window.onclick = function(event) {
+  if (event.target == myModal) {
+    webModal.style.display = "none";
+  }
+}
 
+let priceModal = document.getElementById("priceModal");
+let priceBtn = document.getElementById("pricingBtn");
+let closeBtn = document.getElementById("close3");
 
+priceBtn.onclick = function(){
+    webModal.style.display = "block";
+}
+closeBtn.onclick = function(){
+    webModal.style.display = "none";
+}
 
+window.onclick = function(event) {
+  if (event.target == myModal) {
+    priceModal.style.display = "none";
+  }
+}
 
 
  TweenMax.from(".anm1",1,{
