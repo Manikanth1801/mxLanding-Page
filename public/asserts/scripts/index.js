@@ -3,6 +3,64 @@
  
 // });
 
+// const loadFun = (function(){
+//     let executed = false;
+//    return function (){
+//     if(!executed){
+//       // console.log(executed);
+
+//   //     executed = true;
+//   //     console.log(executed);
+
+
+//     }
+//   }
+  
+// })();
+
+
+//      var waypoint = $('.anm2').waypoint(function(){
+//   TweenMax.from(".anm2",.5,{
+//     x:1600, 
+//     ease:Power2.easeInOut
+// });
+// }, {
+//   offset: '100%'
+// });
+
+
+
+// waypoint = $('.anm3').waypoint(function() {
+//   TweenMax.from(".anm3",.5,{
+//     x:-900, 
+//     ease:Power2.easeInOut
+    
+// });
+// }, {
+//   offset: '100%'
+// });
+
+// waypoint = $('.anm4').waypoint(function(){
+//   TweenMax.from(".anm4",.5,{
+//     x:1600, 
+//     ease:Power2.easeInOut
+// });
+// }, {
+//   offset: '100%'
+// });
+
+// waypoint = $('.anm5').waypoint(function() {
+//   TweenMax.from(".anm5",.5,{
+//     x:-900, 
+//     ease:Power2.easeInOut
+    
+// });
+// }, {
+//   offset: '100%'
+// });
+
+
+
 
 // Modal Code Below
 let modal = document.getElementById("mobModal");
@@ -76,6 +134,7 @@ window.onclick = function(event) {
   }
 }
 
+// Model ends
 
  TweenMax.from(".anm1",1,{
     x:-900,
@@ -83,7 +142,7 @@ window.onclick = function(event) {
 });
 TweenMax.from(".anm2",2,{
     x:1600, 
-    ease:Power2.easeInOut
+    ease:Power2.easeInOut,
     
 });
 TweenMax.from(".anm3",2,{
@@ -98,3 +157,5 @@ TweenMax.from(".anm5 ",2,{
     x:-900,
      ease:Power2.easeInOut
 });
+
+loadFun();

@@ -46,10 +46,12 @@
 }
 .topHead{
     margin-top: 115px;
-    font-weight: 900;
+    /* font-weight: 900; */
     color: grey;
-    text-shadow: 3px 4px lightgrey;
+    /* text-shadow: 3px 4px lightgrey; */
 }
+
+
 @media(max-width:550px){
     .topHead{
         top: 50% !important;
@@ -59,6 +61,10 @@
         font-size: 25px;
         text-shadow: none;
     }
+    #topHead2{
+        font-size:35px;
+    }
+
 }
 .subTitle{
     color: #005cff;
@@ -78,6 +84,21 @@
 .PageContent h1{
     font-weight: 700;
     font-size: 50px;
+}
+@media(max-width:550px){
+    .PageContent h1 {
+        align-items: center;
+        text-align: center;
+    }
+    .sub1{
+        font-size: 45px !important;
+    }
+    #subHeading{
+        font-size: 30px !important;
+    }
+    .textTT{
+        text-align: center !important;
+    }
 }
 /* LEad form css */
 form{
@@ -137,6 +158,14 @@ form{
 }
 .topBtn{
     border-radius: 25px;
+}
+@media(max-width:550px){
+    .topBtn{
+        margin-top: 20px;
+    }
+    .design TT{
+        text-align: center;
+    }
 }
 button{
     border-radius: 25px !important;
@@ -272,10 +301,10 @@ footer .row{
     footer {
         top: 50%;
         left: 50%;
-        margin-top:40px !important;
+        margin-top:90px !important;
         height: 100vh;
         width: 100%;
-        background-image: url(../images/Mob_footer.png);
+        background-image: url(../images/Mob_footer2.png);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -290,11 +319,13 @@ footer .row{
             width: 180px;
             
         }
+        
     }
 }
 
+
+
 footer1{
-    
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -302,6 +333,8 @@ footer1{
     /* border: 1px solid grey; */
     background: #fafbfc;
 }
+
+
 
 .cont-text TT span{
     text-align: center !important;
